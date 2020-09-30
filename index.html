@@ -61,7 +61,7 @@
       <!-- Герой -->
       <section class="hero">
         <div class="container">
-          <h1 class="text__hero">
+          <h1 class="hero__title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
@@ -435,51 +435,34 @@
 
           <form action=""></form>
           <form class="form">
-            <div class="modal__form__field">
-              <label for="name" class="modal__form--label">Имя</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="modal__form--input"
-              />
+            <div class="form__field">
+              <label for="name" class="form--label">Имя</label>
+              <input type="text" name="name" id="name" class="form--input" />
               <svg class="form__field--icon">
                 <use href="./form/sprite.svg#name"></use>
               </svg>
             </div>
 
-            <div class="modal__form__field">
-              <label for="tel" class="modal__form--label">Телефон</label>
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                class="modal__form--input"
-              />
+            <div class="form__field">
+              <label for="tel" class="form--label">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="form--input" />
               <svg class="form__field--icon">
                 <use href="./form/sprite.svg#phone"></use>
               </svg>
             </div>
 
-            <div class="modal__form__field">
-              <label for="email" class="modal__form--label">Почта</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="modal__form--input"
-              />
+            <div class="form__field">
+              <label for="email" class="form--label">Почта</label>
+              <input type="email" name="email" id="email" class="form--input" />
               <svg class="form__field--icon">
                 <use href="./form/sprite.svg#email"></use>
               </svg>
             </div>
 
-            <div class="modal__form__field">
-              <label for="comments" class="modal__form--label"
-                >Комментарий</label
-              >
+            <div class="form__field">
+              <label for="comments" class="form--label">Комментарий</label>
               <textarea
-                class="modal__form--textarea"
+                class="form--textarea"
                 name="comments"
                 id="comments"
                 cols="30"
@@ -488,14 +471,14 @@
               ></textarea>
             </div>
 
-            <div class="modal__form__field checkbox">
-              <label class="modal__form--label"
+            <div class="form__field checkbox">
+              <label class="form--label"
                 >Соглашаюсь с рассылкой и принимаю
-                <a class="modal__form--link" href="">Условия договора</a>
+                <a class="form--link" href="">Условия договора</a>
                 <input
                   type="checkbox"
                   name="checkbox"
-                  class="modal__form--input--checkbox"
+                  class="form--input--checkbox"
                 />
                 <span class="check-box"> </span>
               </label>

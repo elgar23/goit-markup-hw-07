@@ -17,17 +17,18 @@
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-}
-.text__hero {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  color: $main-color;
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    color: $main-color;
+  }
 }

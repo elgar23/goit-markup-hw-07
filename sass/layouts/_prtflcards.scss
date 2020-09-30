@@ -1,21 +1,6 @@
 .cards {
   margin-bottom: 94px;
 }
-
-.text-card {
-  padding: 20px 24px;
-}
-
-.cards:nth-child(3n) {
-  margin-right: 0px;
-}
-.gallery {
-  font-size: 16px;
-  line-height: 1.87;
-
-  flex-wrap: wrap;
-  display: flex;
-}
 .card-item {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
@@ -25,25 +10,47 @@
   background-color: $main-color;
   position: relative;
   overflow: hidden;
-}
-.card-item:hover,
-.card-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.card-item:hover .description,
-.card-item:hover .card-thumb::before {
-  opacity: 1;
-  transform: translateY(0);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .description,
+  &:hover .card-thumb::before {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
-.card-item:nth-child(3n) {
-  margin-right: 0px;
-}
-.card-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
+.card-thumb {
+  position: relative;
+  overflow: hidden;
 
+  &::before {
+    position: absolute;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    right: 0;
+    background-color: $accent-color;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    opacity: 1;
+  }
+}
 .card-text {
   font-weight: bold;
   font-size: 18px;
@@ -54,30 +61,21 @@
 
   margin: 0;
 }
+.text-card {
+  padding: 20px 24px;
+}
 .paragraf {
   color: $text-color;
 }
-.card-thumb {
-  position: relative;
-  overflow: hidden;
+
+.gallery {
+  font-size: 16px;
+  line-height: 1.87;
+
+  flex-wrap: wrap;
+  display: flex;
 }
 
-.card-thumb::before {
-  position: absolute;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  bottom: -100%;
-  right: 0;
-  background-color: $accent-color;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-  opacity: 1;
-}
 .description {
   position: absolute;
   display: flex;

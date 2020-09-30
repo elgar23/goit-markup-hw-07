@@ -1,29 +1,7 @@
 button {
   font-family: inherit;
 }
-.footer-form__btn {
-  display: inline-flex;
-  align-items: center;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 28px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-
-  border: none;
-
-  color: $main-color;
-  background-color: $accent-color;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-}
 .button__hero {
   color: $main-color;
   background-color: $accent-color;
@@ -38,24 +16,7 @@ button {
   border-radius: 4px;
   padding: 10px 32px;
 }
-.modal__close-button {
-  position: absolute;
-  font-size: 15px;
-  width: 30px;
-  height: 30px;
-  background: $main-color;
-  box-sizing: border-box;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  top: 8px;
-  right: 8px;
-  outline: transparent;
-}
 
-.modal__close-button:hover,
-.modal__close-button:focus {
-  color: $accent-color;
-}
 .submit-button {
   width: 200px;
   height: 50px;
@@ -69,14 +30,11 @@ button {
   line-height: 1.9;
   letter-spacing: 0.06em;
   margin-left: 124px;
-}
 
-.submit-button:focus,
-.submit-button:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.list-button__item:not(:last-child) {
-  margin-right: 8px;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 .list-button {
   list-style: none;
@@ -85,28 +43,32 @@ button {
   margin: 0;
   padding-bottom: 50px;
   display: flex;
-}
 
-.list-button__item--button {
-  color: $title-color;
-  background-color: $background-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  text-align: center;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
 
-  border: none;
-  border-radius: 4px;
-  padding: 6px 22px;
+  &__item--button {
+    color: $title-color;
+    background-color: $background-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-align: center;
 
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
 
-.list-button__item--button:hover,
-.list-button__item--button:focus {
-  color: $main-color;
-  background-color: $accent-color;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item--button:hover,
+  &__item--button:focus {
+    color: $main-color;
+    background-color: $accent-color;
+  }
 }

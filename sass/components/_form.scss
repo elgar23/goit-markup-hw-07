@@ -7,21 +7,49 @@
 
   color: $main-color;
   padding-left: 93px;
-}
 
-.footer-form__input {
-  background-color: $secondary-color;
-  padding-left: 16px;
-  padding-right: 166px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  &__input {
+    background-color: $secondary-color;
+    padding-left: 16px;
+    padding-right: 166px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-  margin-right: 12px;
+    margin-right: 12px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    border: none;
+
+    color: $main-color;
+    background-color: $accent-color;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &--icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  }
 }
 input::placeholder {
   font-family: Roboto;
@@ -30,10 +58,4 @@ input::placeholder {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-form--icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
 }

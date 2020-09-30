@@ -8,33 +8,34 @@
 
   list-style: none;
   display: flex;
-}
-.social__list .social__link,
-.social__list .follow-link {
-  width: 44px;
-  height: 44px;
-}
-.social__list:not(:last-child) {
-  margin-right: 10px;
-}
-.social__link {
-  display: flex;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social__link:hover {
-  background-color: $accent-color;
-}
-.social__link:hover .icon {
-  fill: $main-color;
+  &__list .social__link,
+  &__list .follow-link {
+    width: 44px;
+    height: 44px;
+  }
+  &__list:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover {
+    background-color: $accent-color;
+  }
+  &__link:hover .icon {
+    fill: $main-color;
+  }
 }
 .footer-social {
   align-items: center;
@@ -44,9 +45,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.footer-social:not(:last-child) {
-  margin-right: 10px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .join {
   color: $main-color;
@@ -55,28 +57,28 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
 
-.join__link {
-  display: flex;
-  margin: 0;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.join__link:hover {
-  background-color: $accent-color;
-}
+  &__link {
+    display: flex;
+    margin: 0;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover {
+    background-color: $accent-color;
+  }
 
-.join__link:hover .icon {
-  fill: $main-color;
-}
-.join__link .icon {
-  fill: $main-color;
+  &__link:hover .icon {
+    fill: $main-color;
+  }
+  &__link .icon {
+    fill: $main-color;
+  }
 }
